@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "178293237070",
+    "project_id": "aicha-ac6dc",
+    "storage_bucket": "aicha-ac6dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178293237070:android:69c550e09f475867176a1f",
+        "android_client_info": {
+          "package_name": "com.example.aicha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178293237070-pedmdcsqfkgc0hroeur86cnuo3km4ltl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALiIjflJjJF2gHTjlhm_nK_tgQBCxzeVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178293237070-pedmdcsqfkgc0hroeur86cnuo3km4ltl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
