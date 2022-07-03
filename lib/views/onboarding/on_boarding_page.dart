@@ -85,7 +85,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                               Get.toNamed('/sign_in');
                             },
                             child: Text(
-                              "Ignore",
+                              "Ignorer",
                               style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -109,7 +109,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
                                 primary: Color(0xffa0c4f6),
                               ),
-                              child: (currentPage == contentList.length - 1) ? Text("Get started") : Text("Next")),
+                              child: (currentPage == contentList.length - 1) ? Text("Commencer") : Text("Suivant")),
                         ),
                       ),
                     ],

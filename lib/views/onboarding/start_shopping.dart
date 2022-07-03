@@ -43,7 +43,7 @@ class _StartShoppingScreenState extends State<StartShoppingScreen> {
               "Find everything you need here",
               style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xffa39f9f), fontSize: Constants.screenHeight * 0.018),
             ),
-            buildActionButton("Start shopping", () {
+            buildActionButton("Commncer le shopping", () {
               Get.toNamed("/login");
             })
           ],
