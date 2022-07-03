@@ -1,10 +1,10 @@
+import 'dart:io';
+
 import 'package:aicha/views/authentication/forgot_password/forgot_password.dart';
 import 'package:aicha/views/authentication/login/login.dart';
 import 'package:aicha/views/authentication/register/register.dart';
 import 'package:aicha/views/onboarding/start_shopping.dart';
 import 'package:aicha/views/profile/home_page.dart';
-import 'package:aicha/views/profile/pages/product_details.dart';
-import 'package:aicha/views/profile/pages/products.dart';
 import 'package:aicha/views/splash_screen/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -12,10 +12,13 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get_storage/get_storage.dart';
 
+import 'models/data/http_override.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); //
   await Firebase.initializeApp(); //
   await GetStorage.init();
+  HttpOverrides.global = new MyHttpOverrides();
   runApp(const MyApp());
 }
 
@@ -37,8 +40,6 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/forgot_password', page: () => FrogotPassword()),
         GetPage(name: '/register', page: () => Register()),
         GetPage(name: '/home', page: () => HomePageContent()),
-        GetPage(name: '/products', page: () => Products()),
-        GetPage(name: '/products_details', page: () => ProductDetails()),
       ],
       initialRoute: "/",
     );

@@ -18,17 +18,17 @@ int currentPage = 0;
 List<Content> contentList = [
   Content(
     img: 'assets/images/welcome.json',
-    description: 'êtes-vous intéressé par le camping en Tunisie? \n Campino est le mailleure solution pour vous .',
-    title: 'Welcome to Mg no gasp',
+    description: 'Vous voulez lutter contre le gasspillage alimentaire ? \n surtout de produit a DLC proche .',
+    title: 'Bienvenue chez Mg no gasp',
   ),
   Content(
     img: 'assets/images/splash.json',
-    description: 'Nous vous proposons un guide et  un espace de partge de vous experience en camping ',
+    description: 'Vous pouvez profiter des articlez a bas prix',
     title: '',
   ),
   Content(
     img: 'assets/images/location.json',
-    description: 'Avec Campino vous êtes libre de vendre et acheter des equipement de camping en ligne',
+    description: 'decouvrir les magasins les plus proches de vous ',
     title: '',
   )
 ];

@@ -20,11 +20,11 @@ Widget inputField(String label, TextInputType textInputType, TextEditingControll
           controller: controller,
           validator: (value) {
             if (value!.isEmpty) {
-              return " this field is required";
+              return " cet camp est obligatoire";
             } else if (label == "Email") {
               bool emailValid = RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(value);
               if (!emailValid) {
-                return " wrong email format ";
+                return " Format incorrecte d'email ";
               }
             }
           },

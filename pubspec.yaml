@@ -61,6 +61,7 @@ dev_dependencies:
   geolocator: ^8.2.0 # gestion de la localisation
   geocoding: ^2.0.4 # conversion de latitude et longitude en adresses
   url_launcher: ^6.1.0 # gestion des appels de téléphone
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

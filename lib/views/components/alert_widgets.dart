@@ -14,7 +14,7 @@ Widget Positive(VoidCallback onPressed) {
         child: TextButton(
             onPressed: onPressed,
             child: Text(
-              "${"Yes"}",
+              "Oui",
               style: TextStyle(
                 fontFamily: "NunitoBold",
                 color: Color(0xffEAEDEF),
@@ -39,7 +39,7 @@ Widget Negative() {
               Navigator.pop(context);
             },
             child: Text(
-              "No",
+              "Non",
               style: TextStyle(
                 fontFamily: "NunitoBold",
                 color: Color(0xffEAEDEF),

@@ -41,7 +41,7 @@ class _FrogotPasswordState extends State<FrogotPassword> {
               child: Padding(
                 padding: EdgeInsets.only(top: Constants.screenHeight * 0.08),
                 child: Text(
-                  "Reset password",
+                  "Recupérer le password",
                   style: TextStyle(fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -64,7 +64,7 @@ class _FrogotPasswordState extends State<FrogotPassword> {
                             padding: const EdgeInsets.all(8.0),
                             child: CircularProgressIndicator(),
                           )
-                        : buildActionButton("Reset", () {
+                        : buildActionButton("Recupérer", () {
                             if (_formKey.currentState!.validate()) {
                               setState(() {
                                 loading = true;
@@ -76,7 +76,7 @@ class _FrogotPasswordState extends State<FrogotPassword> {
                                 });
                                 if (value) {
                                   Fluttertoast.showToast(
-                                      msg: "Reset password link has been sent ",
+                                      msg: "un lien de recupération a été envoyé  ",
                                       toastLength: Toast.LENGTH_SHORT,
                                       gravity: ToastGravity.BOTTOM,
                                       timeInSecForIosWeb: 1,
@@ -85,7 +85,7 @@ class _FrogotPasswordState extends State<FrogotPassword> {
                                       fontSize: 16.0);
                                 } else {
                                   Fluttertoast.showToast(
-                                      msg: "No account with the given email",
+                                      msg: "pas de compte avec cet email",
                                       toastLength: Toast.LENGTH_SHORT,
                                       gravity: ToastGravity.BOTTOM,
                                       timeInSecForIosWeb: 1,

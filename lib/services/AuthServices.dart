@@ -21,7 +21,7 @@ class AuthServices {
     try {
       await auth.createUserWithEmailAndPassword(email: emailController, password: passwordController);
 
-      await DbServices().saveUser(Cusers(uid: user!.uid, userName: Name, Email: emailController, Gsm: GsmController));
+      await DbServices().saveUser(Cusers(uid: user!.uid, userName: Name, Email: emailController, Gsm: GsmController, basket: []));
       print("done");
       return true;
     } on FirebaseException catch (e) {

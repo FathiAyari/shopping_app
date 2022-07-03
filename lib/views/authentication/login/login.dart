@@ -37,7 +37,7 @@ class _LoginState extends State<Login> {
         children: [
           Image.asset("assets/images/dexclamation.png", height: Constants.screenHeight * 0.06, color: Colors.red),
           Text(
-            "Do you want to quit ?",
+            "Vous etes sur de quiter?",
             style: TextStyle(
               fontSize: 16,
               fontFamily: "NunitoBold",
@@ -74,7 +74,7 @@ class _LoginState extends State<Login> {
                 child: Padding(
                   padding: EdgeInsets.only(top: Constants.screenHeight * 0.08),
                   child: Text(
-                    "Login",
+                    "S'authentifier",
                     style: TextStyle(fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -95,7 +95,7 @@ class _LoginState extends State<Login> {
                             height: Constants.screenHeight * 0.09,
                           ),
                           inputField("Email", TextInputType.emailAddress, emailController),
-                          PasswordField(label: "Password", passwordController: passwordController),
+                          PasswordField(label: "Mot de passe", passwordController: passwordController),
                           Container(
                               alignment: Alignment.topRight,
                               width: double.infinity,
@@ -109,7 +109,7 @@ class _LoginState extends State<Login> {
                                         Get.toNamed('/forgot_password');
                                       },
                                       child: Text(
-                                        "Frogot password ?",
+                                        "Mot de passe oubliée ?",
                                         style: TextStyle(
                                           decoration: TextDecoration.underline,
                                         ),
@@ -119,7 +119,7 @@ class _LoginState extends State<Login> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: CircularProgressIndicator(),
                                 )
-                              : buildActionButton("Login", () {
+                              : buildActionButton("S'authentifier", () {
                                   if (_formKey.currentState!.validate()) {
                                     setState(() {
                                       loading = true;
@@ -138,7 +138,7 @@ class _LoginState extends State<Login> {
                                           loading = false;
                                         });
                                         Fluttertoast.showToast(
-                                            msg: "Invalid cridentials",
+                                            msg: "Les données ne sont pas correctes",
                                             toastLength: Toast.LENGTH_SHORT,
                                             gravity: ToastGravity.BOTTOM,
                                             timeInSecForIosWeb: 1,

@@ -45,7 +45,7 @@ class _RegisterState extends State<Register> {
               child: Padding(
                 padding: EdgeInsets.only(top: Constants.screenHeight * 0.08),
                 child: Text(
-                  "Register",
+                  "Créer un compte",
                   style: TextStyle(fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -65,16 +65,16 @@ class _RegisterState extends State<Register> {
                         SizedBox(
                           height: Constants.screenHeight * 0.09,
                         ),
-                        inputField("Full Name", TextInputType.emailAddress, nameController),
+                        inputField("Nom et prénom", TextInputType.emailAddress, nameController),
                         inputField("Email", TextInputType.emailAddress, emailController),
-                        inputField("Phone Number", TextInputType.number, phoneController),
-                        PasswordField(label: "Password", passwordController: passwordController),
+                        inputField("Numéero de portable", TextInputType.number, phoneController),
+                        PasswordField(label: "Mot de passe", passwordController: passwordController),
                         loading
                             ? Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: CircularProgressIndicator(),
                               )
-                            : buildActionButton("Register", () {
+                            : buildActionButton("Créer un compte", () {
                                 if (_formKey.currentState!.validate()) {
                                   setState(() {
                                     loading = true;
@@ -93,7 +93,7 @@ class _RegisterState extends State<Register> {
                                         loading = false;
                                       });
                                       Fluttertoast.showToast(
-                                          msg: "User already exists",
+                                          msg: "Utilisateur déja existe",
                                           toastLength: Toast.LENGTH_SHORT,
                                           gravity: ToastGravity.BOTTOM,
                                           timeInSecForIosWeb: 1,

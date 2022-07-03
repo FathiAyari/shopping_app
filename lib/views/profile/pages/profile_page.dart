@@ -129,7 +129,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     Image.asset("assets/images/dexclamation.png", height: Constants.screenHeight * 0.06, color: Colors.red),
                     Text(
-                      "Do you want to quit ?",
+                      "Vous voulez deconncter ?",
                       style: TextStyle(
                         fontSize: 16,
                         fontFamily: "NunitoBold",
